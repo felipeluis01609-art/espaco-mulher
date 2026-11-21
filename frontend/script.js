@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://espaco-mulher.onrender.com';
 
 document.getElementById('form-agendamento').addEventListener('submit', async (event) => {
   event.preventDefault();
