@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espaço Mulher - Estúdio de Depilação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container">
+      <h1>Espaço Mulher</h1>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-texto">
+        <h2>Cuidado suave e resultados duradouros</h2>
+        <p>Depilação em um ambiente confortável e higienizado.</p>
+      </div>
+      <div class="hero-imagem">
+        <img src="espaco-relaxante.jpeg" alt="Ambiente acolhedor do estúdio de depilação">
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="servicos">
+      <h2 class="titulo-secao">Nossos Serviços</h2>
+      <div class="grade-servicos">
+        
+        <article class="card">
+          <img src="degustacao.jpeg" alt="Espaço de Degustação" class="card-img">
+          <div class="card-conteudo">
+            <h3>Ambiente confortável e espaço para degustação</h3>
+            <p>Espera confortável em um ambiente tranquilo.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="espaco-mulher.jpeg" alt="Espaço da mulher" class="card-img">
+          <div class="card-conteudo">
+            <h3>Espaço relaxante ideal para mulheres</h3>
+            <p>Especialista para suas necessidades.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="certificados.jpeg" alt="Depilação egípcia com linha" class="card-img">
+          <div class="card-conteudo">
+            <h3>Especialista em Depilação</h3>
+            <p>Ideal para o rosto e áreas sensíveis, sem agredir ou manchar a pele.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="sobre" class="perfil-card">
+      <img src="elaine.jpeg" alt="Foto da profissional especialista" class="perfil-foto">
+      <div class="perfil-texto">
+        <h2>Sobre a Profissional</h2>
+        <p>Olá! Sou <strong>Elaine Bocelli</strong>, especialista em Depilação e cuidados com a pele. Atendimento individualizado e técnicas suaves para garantir seu conforto e bem-estar em cada sessão.</p>
+      </div>
+    </section>
+
+    <!-- Formulário de Agendamento -->
+    <section id="agendamento" class="perfil-card">
+      <div class="perfil-texto">
+        <h2>Solicitar Agendamento</h2>
+        <form id="form-agendamento">
+          <input type="text" id="nome" placeholder="Seu nome" required>
+          <input type="tel" id="telefone" placeholder="Seu WhatsApp" required>
+          <select id="servico" required>
+            <option value="">Escolha o serviço...</option>
+            <option value="Depilação com Cera">Depilação com Cera</option>
+            <option value="Depilação Egípcia">Depilação Egípcia</option>
+          </select>
+          <input type="date" id="data" required>
+          <button type="submit" class="btn">Enviar Pedido</button>
+        </form>
+        <p id="mensagem-resposta"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato" class="rodape">
+    <div class="container">
+      <p><strong>Endereço:</strong> Rua Agostinho Possari, 387, Cidade Singer 2 - Campinas SP, 13053-353</p>
+      <p><strong>WhatsApp:</strong> (19) 99465-5475</p>
+    </div>
+
+    <div class="whats">
+      <a href="https://wa.me" target="_blank" rel="noopener noreferrer">
+        <img src="images.png" width="75" alt="Fale conosco" title="Fale conosco">
+      </a>
+    </div>
+
+    <div class="instagram"> 
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+        <img src="instagram.jpeg" alt="Nosso perfil" title="Instagram">
+      </a>
+    </div> 
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
