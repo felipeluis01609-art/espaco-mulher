@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria - Espaço Mulher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container">
+      <h1>Espaço Mulher</h1>
+      <nav>
+        <a href="index.html">← Voltar ao Início</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <section class="perfil-card" style="flex-direction: column; align-items: stretch;">
+      <h2 style="color: var(--cor-primaria); text-align: center;">Conheça Nosso Espaço</h2>
+      
+      <!-- Carrossel no Topo -->
+      <div class="carrossel-container">
+        <button class="carrossel-btn anterior" onclick="mudarSlide(-1)">&#10094;</button>
+        <img id="carrossel-img" src="espaco-relaxante.jpeg" alt="Foto do espaço">
+        <button class="carrossel-btn proximo" onclick="mudarSlide(1)">&#10095;</button>
+      </div>
+
+      <!-- Legenda explicando a imagem atual -->
+      <p id="carrossel-legenda" class="legenda-foto">
+        Sala de atendimento climatizada e higienizada para seu conforto.
+      </p>
+
+      <!-- Pequeno texto descritivo -->
+      <div class="perfil-texto" style="margin-top: 12px;">
+        <p>
+          Cada detalhe do <strong>Espaço Mulher</strong> foi planejado para oferecer privacidade, 
+          biossegurança rigorosa e acolhimento. Utilizamos materiais 100% descartáveis e técnicas 
+          suaves para transformar o seu atendimento em um momento de cuidado e tranquilidade.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const slides = [
+      {
+        imagem: 'espaco-relaxante.jpeg',
+        legenda: 'Sala de atendimento climatizada e higienizada para seu conforto.'
+      },
+      {
+        imagem: 'degustacao.jpeg',
+        legenda: 'Cantinho do café e degustação preparado para receber você.'
+      },
+      {
+        imagem: 'espaco-mulher.jpeg',
+        legenda: 'Ambiente exclusivo pensado para o bem-estar feminino.'
+      }
+    ];
+
+    let indiceAtual = 0;
+
+    function mudarSlide(direcao) {
+      indiceAtual += direcao;
+      if (indiceAtual < 0) indiceAtual = slides.length - 1;
+      if (indiceAtual >= slides.length) indiceAtual = 0;
+
+      document.getElementById('carrossel-img').src = slides[indiceAtual].imagem;
+      document.getElementById('carrossel-legenda').innerText = slides[indiceAtual].legenda;
+    }
+  </script>
+</body>
+</html>
