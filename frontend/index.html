@@ -10,6 +10,19 @@
   <header class="topo">
     <div class="container">
       <h1>Espaço Mulher</h1>
+
+      <!-- Botão dos 3 tracinhos -->
+      <button class="menu-btn" onclick="document.getElementById('menu-opcoes').classList.toggle('aberto')" aria-label="Abrir menu">
+        &#9776;
+      </button>
+
+      <!-- Abas que abrem ao clicar -->
+      <nav id="menu-opcoes" class="menu-lista">
+        <a href="index.html">Início</a>
+        <a href="pagina-carrossel.html">Nossa Estrutura (Galeria)</a>
+        <a href="pagina-detalhe.html">Cuidados Pós-Depilação</a>
+        <a href="#agendamento" onclick="document.getElementById('menu-opcoes').classList.remove('aberto')">Solicitar Agendamento</a>
+      </nav>
     </div>
   </header>
 
@@ -57,7 +70,7 @@
       </div>
     </section>
 
-    <!-- Nova Seção: 3 Atrações / Destaques -->
+    <!-- Seção: 3 Atrações / Destaques -->
     <section id="atracoes">
       <h2 class="titulo-secao">Nossos Diferenciais</h2>
       <div class="grade-servicos">
@@ -82,7 +95,7 @@
           </div>
         </article>
 
-        <!-- Card 3 -> Também pode apontar para uma das páginas -->
+        <!-- Card 3 -> Vai para a página com carrossel -->
         <article class="card">
           <img src="degustacao.jpeg" alt="Experiência VIP" class="card-img">
           <div class="card-conteudo">
@@ -130,17 +143,16 @@
     </div>
 
     <div class="whats">
-      <a href="https://wa.me/message/72LYH6VMYARPL1" target="_blank" rel="noreferrer">
+      <a href="https://wa.me" target="_blank" rel="noreferrer">
         <img src="images.png" width="75" alt="Fale conosco" title="Fale conosco">
       </a>
     </div>
 
     <div class="instagram"> 
-      <a href="https://www.instagram.com/espacomulher_spah" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-instagram">
         <img src="instagram.jpeg" alt="Nosso perfil" title="Instagram">
       </a>
-    </div>
-
+    </div> 
   </footer>
 
   <script src="script.js"></script>
