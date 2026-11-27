@@ -349,3 +349,62 @@ main {
   margin-top: 8px;
   font-weight: 500;
 }
+
+/* Menu de Três Tracinhos (Hambúrguer) */
+.topo .container {
+  position: relative;
+}
+
+.menu-btn {
+  background: none;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  color: var(--cor-primaria);
+  font-size: 1.6rem;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu-btn:hover {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+}
+
+.menu-lista {
+  display: none; /* Fica escondido até clicar */
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 230px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.menu-lista.aberto {
+  display: flex; /* Aparece quando clica nos 3 tracinhos */
+}
+
+.menu-lista a {
+  margin: 0;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--cor-borda);
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.menu-lista a:last-child {
+  border-bottom: none;
+}
+
+.menu-lista a:hover {
+  background-color: var(--cor-fundo);
+  color: var(--cor-primaria);
+}
